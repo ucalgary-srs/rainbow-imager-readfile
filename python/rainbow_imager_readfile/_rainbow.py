@@ -7,7 +7,7 @@ import signal as signal
 from multiprocessing import Pool as Pool
 
 # globals
-RAINBOW_IMAGE_SIZE_BYTES = 512 * 256 * 2
+RAINBOW_IMAGE_SIZE_BYTES = 256 * 512 * 2
 RAINBOW_DT = np.dtype("uint16")
 RAINBOW_DT = RAINBOW_DT.newbyteorder('>')  # force big endian byte ordering
 
@@ -26,7 +26,7 @@ def read(file_list, workers=1):
     """
     # pre-allocate array sizes (optimization)
     predicted_num_frames = len(file_list) * 10
-    images = np.empty([512, 256, predicted_num_frames], dtype=RAINBOW_DT)
+    images = np.empty([256, 512, predicted_num_frames], dtype=RAINBOW_DT)
     metadata_dict_list = [{}] * predicted_num_frames
     problematic_file_list = []
 
@@ -181,7 +181,7 @@ def __rainbow_readfile_worker(file):
                 image_np = np.frombuffer(image_bytes, dtype=RAINBOW_DT)
 
                 # change 1d numpy array into 512x256 matrix with correctly located pixels
-                image_matrix = np.reshape(image_np, (512, 256, 1))
+                image_matrix = np.reshape(image_np, (256, 512, 1))
             except Exception as e:
                 print("Failed reading image data frame: %s" % (str(e)))
                 metadata_dict_list.pop()  # remove corresponding metadata entry
