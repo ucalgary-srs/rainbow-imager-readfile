@@ -50,8 +50,6 @@ def read(file_list, workers=1):
     else:
         pool.close()
 
-    print(data)
-
     # reorganize data
     list_position = 0
     for i in range(0, len(data)):
