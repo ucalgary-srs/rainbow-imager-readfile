@@ -31,7 +31,7 @@ Import the library using `import rainbow_imager_readfile`
 
 ```python
 >>> import rainbow_imager_readfile
->>> filename = "path/to/data/2020/01/01/fsmi_rainbow-654/ut06/20200101_0600_fsmi_rainbow-654_6300.pgm.gz"
+>>> filename = "path/to/data/2015/01/01/fsmi_rainbow-11/ut06/20150101_0600_fsmi_rainbow-11_full.pgm.gz"
 >>> img, meta, problematic_files = rainbow_imager_readfile.read(filename)
 ```
 
@@ -39,7 +39,7 @@ Import the library using `import rainbow_imager_readfile`
 
 ```python
 >>> import rainbow_imager_readfile, glob
->>> file_list = glob.glob("path/to/files/2020/01/01/fsmi_rainbow-654/ut06/*6300.pgm*")
+>>> file_list = glob.glob("path/to/files/2015/01/01/fsmi_rainbow-11/ut06/*full.pgm*")
 >>> img, meta, problematic_files = rainbow_imager_readfile.read(file_list)
 ```
 
@@ -47,7 +47,7 @@ Import the library using `import rainbow_imager_readfile`
 
 ```python
 >>> import rainbow_imager_readfile, glob
->>> file_list = glob.glob("path/to/files/2020/01/01/fsmi_rainbow-654/ut06/*6300.pgm*")
+>>> file_list = glob.glob("path/to/files/2015/01/01/fsmi_rainbow-11/ut06/*full.pgm*")
 >>> img, meta, problematic_files = rainbow_imager_readfile.read(file_list, workers=4)
 ```
 
