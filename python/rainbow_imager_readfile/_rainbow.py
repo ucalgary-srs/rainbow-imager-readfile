@@ -2,6 +2,7 @@
 # Date: 2020-10-16
 
 import gzip as gzip
+import bz2
 import numpy as np
 import signal as signal
 from multiprocessing import Pool as Pool
@@ -101,7 +102,9 @@ def __rainbow_readfile_worker(file):
         if file.endswith("pgm.gz"):
             unzipped = gzip.open(file, mode='rb')
         elif file.endswith("pgm"):
-            unzipped = open(file, mode='rb')
+            unzipped = open(file, mode='rb')        
+        elif file.endswith("pgm.bz2"):
+            unzipped = bz2.open(file, mode='rb')
         else:
             print("Unrecognized file type: %s" % (file))
             return images, metadata_dict_list, problematic, file, error_message
