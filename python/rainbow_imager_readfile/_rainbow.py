@@ -102,7 +102,7 @@ def __rainbow_readfile_worker(file):
         if file.endswith("pgm.gz"):
             unzipped = gzip.open(file, mode='rb')
         elif file.endswith("pgm"):
-            unzipped = open(file, mode='rb')        
+            unzipped = open(file, mode='rb')
         elif file.endswith("pgm.bz2"):
             unzipped = bz2.open(file, mode='rb')
         else:
