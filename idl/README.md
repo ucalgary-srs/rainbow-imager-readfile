@@ -1,9 +1,9 @@
-# Redline All-Sky Imager Raw PGM Data Readfile (REGO)
+# Rainbow All-Sky Imager Raw PGM Data Readfile (GO-Canada AGO/CGSM Rainbow)
 
 ![idl-required](https://img.shields.io/badge/IDL-6.0%2B-lightgrey)
 ![license](https://img.shields.io/badge/license-MIT-brightgreen)
 
-IDL procedures for reading Redline All-Sky Imager (REGO ASI) stream0 raw PGM-file data. The data can be found at https://data.phys.ucalgary.ca. 
+IDL procedures for reading Rainbow All-Sky Imager (GO-Canada AGO or CGSM Rainbow) stream0 raw PGM-file data. The data can be found at https://data.phys.ucalgary.ca.
 
 NOTE: these programs are the exact same as those used to read THEMIS ASI data (https://github.com/ucalgary-aurora/themis-imager-readfile). This is why they are called "themis_imager_readfile".
 
