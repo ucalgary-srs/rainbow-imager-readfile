@@ -25,7 +25,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Environemnt:**
  - OS: [e.g. Ubuntu 20.04]
- - rego-imager-readfile version [e.g. 1.0.0]
+ - rainbow-imager-readfile version [e.g. 1.0.0]
  - Python/IDL Version [e.g. Python 3.8.5]
 
 **Additional context**
