@@ -17,7 +17,7 @@ $ python3 -m pip install rainbow-imager-readfile
 
 ## Supported Python Versions
 
-rainbow-imager-readfile officially supports Python 3.6+.
+rainbow-imager-readfile officially supports Python 3.8+.
 
 ## Examples
 

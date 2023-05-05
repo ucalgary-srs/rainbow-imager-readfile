@@ -4,4 +4,7 @@
 
 This repository contains code for reading Rainbow All-Sky Imager (GO-Canada AGO or CGSM Rainbow) stream0 raw PGM-file data. The data can be found at https://data.phys.ucalgary.ca.
 
-There exists readfile software for both IDL and Python. Navigate to each language subdirectory in this repository to see their specific readmes. The IDL software is exactly the same as that written for THEMIS ASI (https://github.com/ucalgary-aurora/rainbow-imager-readfile).
+- [IDL install instructions and examples](https://github.com/ucalgary-aurora/rainbow-imager-readfile/blob/main/idl/README.md)
+- [Python install instructions and examples](https://github.com/ucalgary-aurora/rainbow-imager-readfile/blob/main/python/README.md)
+
+Note - the IDL software is exactly the same as that written for THEMIS ASI (https://github.com/ucalgary-aurora/rainbow-imager-readfile).
