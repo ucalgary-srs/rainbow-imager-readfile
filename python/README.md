@@ -53,6 +53,14 @@ Import the library using `import rainbow_imager_readfile`
 >>> img, meta, problematic_files = rainbow_imager_readfile.read(file_list, workers=4)
 ```
 
+### Read with no output
+
+```python
+>>> import rainbow_imager_readfile, glob
+>>> file_list = glob.glob("path/to/files/2015/01/01/fsmi_rainbow-11/ut06/*full.pgm*")
+>>> img, meta, problematic_files = rainbow_imager_readfile.read(file_list, workers=4, quiet=True)
+```
+
 ## Development
 
 Clone the repository and install dependencies using Poetry.
