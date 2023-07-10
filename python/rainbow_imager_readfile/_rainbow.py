@@ -57,6 +57,7 @@ def read(file_list, workers=1, quiet=False):
             return np.empty((0, 0, 0), dtype=RAINBOW_DT), [], []
         else:
             pool.close()
+            pool.join()
     else:
         # don't bother using multiprocessing with one worker, just call the worker function directly
         data = []
