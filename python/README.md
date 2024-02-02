@@ -61,6 +61,22 @@ Import the library using `import rainbow_imager_readfile`
 >>> img, meta, problematic_files = rainbow_imager_readfile.read(file_list, workers=4, quiet=True)
 ```
 
+### Read only the first frame of each file
+
+```python
+>>> import rainbow_imager_readfile, glob
+>>> file_list = glob.glob("path/to/files/2015/01/01/fsmi_rainbow-11/ut06/*full.pgm*")
+>>> img, meta, problematic_files = rainbow_imager_readfile.read(file_list, first_frame=True)
+```
+
+### Exclude reading the metadata
+
+```python
+>>> import rainbow_imager_readfile, glob
+>>> file_list = glob.glob("path/to/files/2015/01/01/fsmi_rainbow-11/ut06/*full.pgm*")
+>>> img, meta, problematic_files = rainbow_imager_readfile.read(file_list, no_metadata=True)
+```
+
 ## Development
 
 Clone the repository and install dependencies using Poetry.
